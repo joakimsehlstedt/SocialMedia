@@ -1,0 +1,13 @@
+﻿@model IEnumerable<SocialMedia.Models.Friend>
+
+@{
+    ViewBag.Title = "Friends";
+}
+
+<h2>My Friends</h2>
+
+@foreach (var item in Model) {
+    <p>
+        <strong>@item.Username</strong>
+    </p>
+}

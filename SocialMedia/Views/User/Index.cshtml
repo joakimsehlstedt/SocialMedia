@@ -1,0 +1,23 @@
+﻿@model IEnumerable<SocialMedia.ViewModels.UserModel>
+
+@{
+    ViewBag.Title = "Users";
+}
+
+<h2>Users</h2>
+
+<form action="~/User/Index" method="get">
+    <input type ="text" name="search" style="width:275px;" />
+    <input type="submit" value="Search" />
+</form>
+
+@foreach (var item in Model) {
+    <p>
+        <strong>@item.Username</strong>
+        
+        @if (item.Friend) { <span> Friend</span> }
+        else {
+            @Html.ActionLink("Add as friend", "AddFriend", "User", new { Username = item.Username }, null)
+        }
+    </p>
+}

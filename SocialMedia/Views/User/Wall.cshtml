@@ -1,0 +1,25 @@
+﻿@model IEnumerable<SocialMedia.Models.Post>
+
+@{
+    ViewBag.Title = "Wall";
+}
+
+<h2>Wall</h2>
+
+<h4>@Html.ActionLink("Create new post", "Create", "User")</h4>
+
+@foreach (var item in Model) {
+    <p>
+        <strong>@item.Content</strong><br />
+        @item.Author | @item.DateCreated.ToShortDateString() @item.DateCreated.ToShortTimeString() | @Html.ActionLink("Like", "LikePost", "User", new { Id = item.Id }, null) (@item.Likes.Count)
+
+        <ul>
+            @Html.ActionLink("Add comment", "Comment", "User", new { Id = item.Id }, null)
+            @foreach (var comment in item.Comments) {
+                <li>
+                    @comment.Content | @comment.Author | @item.DateCreated.ToShortDateString() @item.DateCreated.ToShortTimeString()
+                </li>
+            }
+        </ul>
+    </p>
+}
