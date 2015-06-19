@@ -106,10 +106,6 @@ csx
 # Windows Store app package directory
 AppPackages/
 
-
-# App data folder
-App_Data/
-
 # Others
 sql/
 *.Cache
