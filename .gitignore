@@ -160,7 +160,6 @@ ClientBin/
 *.publishsettings
 node_modules/
 bower_components/
-**/Web.config
 
 # RIA/Silverlight projects
 Generated_Code/
@@ -191,4 +190,3 @@ _Pvt_Extensions/
 ModelManifest.xml
 SocialMedia/Web.config
 SocialMedia/Views/Web.config
-SocialMedia/App_Data/SocialMedia_log.ldf
