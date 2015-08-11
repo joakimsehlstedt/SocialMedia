@@ -280,7 +280,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Filters\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -305,6 +304,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\joxiba-socialmedia - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\joxiba-socialmedia - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\joxiba-socialmedia - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\joxiba-socialmedia - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
